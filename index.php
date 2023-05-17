@@ -27,11 +27,11 @@
           <a class="nav-link" href="mahasiswa.php" target="frutama">Mahasiswa</a>
         </li>  
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Informasi</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link</a></li>
-            <li><a class="dropdown-item" href="#">Another link</a></li>
-            <li><a class="dropdown-item" href="#">A third link</a></li>
+            <li><a class="dropdown-item" href="daftarprodi.php" target="frutama">Daftar Program Studi</a></li>
+            <li><a class="dropdown-item" href="#" target="frutama">Another link</a></li>
+            <li><a class="dropdown-item" href="#" target="frutama">A third link</a></li>
           </ul>
         </li>
       </ul>
