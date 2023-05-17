@@ -30,8 +30,8 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Informasi</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="daftarprodi.php" target="frutama">Daftar Program Studi</a></li>
-            <li><a class="dropdown-item" href="#" target="frutama">Another link</a></li>
-            <li><a class="dropdown-item" href="#" target="frutama">A third link</a></li>
+            <li><a class="dropdown-item" href="dafmhsperprodi.php" target="frutama">Daftar Mahasiswa Per Program Studi</a></li>
+            <li><a class="dropdown-item" href="profilmhs.php" target="frutama">Profil Mahasiswa</a></li>
           </ul>
         </li>
       </ul>
