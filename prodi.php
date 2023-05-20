@@ -18,7 +18,7 @@ $kon=mysqli_connect("localhost","root","","aplikasisampel1");
    <div class="col-sm-8">
    <form name="frmcari" method="post" class="input-group mb-8" target="frmhasil" action="hasilcariprodi.php">
    <input type="text" class="form-control" placeholder="Ketik kode atau nama prodi yang dicari" name="kCari" id="kCari">
-   <button class="btn btn-success" type="submit" name="bCari">Go</button>
+   <button class="btn btn-success" type="submit" name="bCari">🔎 Go</button>
   </form>
    </div>
   </div> 
@@ -32,7 +32,7 @@ $kon=mysqli_connect("localhost","root","","aplikasisampel1");
       <input type="text" class="form-control" id="namaprodi" placeholder="Enter nama prodi" name="namaprodi">
     </div>
    
-    <button type="submit" class="btn btn-primary" name="bSimpan">Simpan</button>
+    <button type="submit" class="btn btn-primary" name="bSimpan">💾 Simpan</button>
   </form>
   <iframe name="frmhasil" width="100%" height="400px"></iframe>
   <?php 

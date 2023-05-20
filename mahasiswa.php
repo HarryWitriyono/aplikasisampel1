@@ -20,7 +20,7 @@ $kon=mysqli_connect("localhost","root","","aplikasisampel1");
   <div class="col-sm-8">
    <form method="post" action="hasilcarimhs.php" target="frmhasilcari" class="input-group">
     <input type="text" name="kCari" placeholder="Ketik nomor pokok mahasiswa yang dicari" class="form-control">
-	<input type="submit" value="Go" class="btn btn-info">
+	<input type="submit" value="🔎 Go" class="btn btn-info">
    </form>
   </div>  
  </div> 
@@ -75,7 +75,7 @@ $kon=mysqli_connect("localhost","root","","aplikasisampel1");
 	 ?>
     </select>
     </div>
-    <button type="submit" class="btn btn-primary" name="bSimpan">Simpan</button>
+    <button type="submit" class="btn btn-primary" name="bSimpan">💾 Simpan</button>
    </div>
   </div>
   </form>
