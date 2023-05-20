@@ -41,7 +41,9 @@ if (isset($_POST['kCari'])) {
 		<td><?php echo $r['tanggallahir'];?></td>
 		<td><?php echo $r['alamat'];?></td>
 		<td><?php echo $r['kodeprodi'];?></td>
-		<td><?php echo $r['npm'];?></td>
+		<td><a href="koreksimhs.php?npm=<?php echo $r['npm'];?>" target="frutama" class="btn btn-info btn-sm">&#9998;</a>
+		<a href="hapusmhs.php?npm=<?php echo $r['npm'];?>" target="frutama" title="Hapus rekord mahasiswa " onclick="return confirm('Apakah yakin akan menghapus rekord <?php echo $r['npm'];?> ini ?');" class="btn btn-danger btn-sm">&#128465;</a>
+		</td>
       </tr>
 	<?php } while($r=mysqli_fetch_array($q));
 }
