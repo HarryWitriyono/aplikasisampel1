@@ -97,7 +97,7 @@ $kon=mysqli_connect("localhost","root","","aplikasisampel1");
 	  $alamat=$_POST['alamat'];
 	  $kodeprodi=$_POST['kodeprodi'];
 	  
-	  $sql="update mahasiswa set namamahasiswa='".$npm."', sex='".$sex."',tempatlahir='".$tempatlahir."',tanggallahir='".$tanggallahir."',alamat='".$alamat."',kodeprodi='".$kodeprodi."' where npm='".$npm."'";
+	  $sql="update mahasiswa set namamahasiswa='".$namamahasiswa."', sex='".$sex."',tempatlahir='".$tempatlahir."',tanggallahir='".$tanggallahir."',alamat='".$alamat."',kodeprodi='".$kodeprodi."' where npm='".$npm."'";
 	  $q=mysqli_query($kon,$sql);
 	  header("location:mahasiswa.php");
   }
