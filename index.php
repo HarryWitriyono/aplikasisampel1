@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm bg-success navbar-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">🧑🏻‍🎓</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -30,8 +30,8 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Informasi</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="daftarprodi.php" target="frutama">Daftar Program Studi</a></li>
-            <li><a class="dropdown-item" href="dafmhsperprodi.php" target="frutama">Daftar Mahasiswa Per Program Studi</a></li>
-            <li><a class="dropdown-item" href="profilmhs.php" target="frutama">Profil Mahasiswa</a></li>
+            <li><a class="dropdown-item" href="dafmhsperprodi.php" target="frutama">🧑🏻‍🎓 Daftar Mahasiswa Per Program Studi</a></li>
+            <li><a class="dropdown-item" href="profilmhs.php" target="frutama">🧑🏻‍🎓 Profil Mahasiswa</a></li>
           </ul>
         </li>
       </ul>
