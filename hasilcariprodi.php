@@ -41,8 +41,8 @@ $kon=mysqli_connect("localhost","root","","aplikasisampel1");
       <tr>
         <td><?php echo $rcari['kodeprodi'];?></td>
         <td><?php echo $rcari['namaprodi'];?></td>
-        <td><a href="koreksiprodi.php?kodeprodi=<?php echo $rcari['kodeprodi'];?>" target="frutama" class="btn btn-primary">Koreksi</a>
-		<a href="hapusprodi.php?kodeprodi=<?php echo $rcari['kodeprodi'];?>" target="frutama" class="btn btn-danger" onclick="return confirm('Apakah akan dihapus ?')">Hapus</a></td>
+        <td><a href="koreksiprodi.php?kodeprodi=<?php echo $rcari['kodeprodi'];?>" target="frutama" class="btn btn-primary">🖊️</a>
+		<a href="hapusprodi.php?kodeprodi=<?php echo $rcari['kodeprodi'];?>" target="frutama" class="btn btn-danger" onclick="return confirm('Apakah akan dihapus ?')">🗑️</a></td>
       </tr>
 	<?php
 	} while($rcari=mysqli_fetch_array($qcari));
