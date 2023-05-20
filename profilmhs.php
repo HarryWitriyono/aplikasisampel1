@@ -45,7 +45,11 @@
       </tr>
 	  <tr>
         <td>Jenis Kelamin</td>
-        <td>:&nbsp;<?php echo $r['sex'];?>
+        <td>:&nbsp;<?php switch($r['sex']) {
+		case 'L': echo "Laki-laki";break;
+		case 'P': echo "Perempuan";break;
+		}		
+		;?>
       </tr>
 	  <tr>
         <td>Tempat,Tgl. Lahir</td>
