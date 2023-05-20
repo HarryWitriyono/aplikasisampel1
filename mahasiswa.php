@@ -13,8 +13,20 @@ $kon=mysqli_connect("localhost","root","","aplikasisampel1");
 <body>
 
 <div class="container mt-3">
+ <div class="row">
+  <div class="col-sm-4">
   <h2>Rekord Mahasiswa</h2>
-  <form action="" method="post">
+  </div>
+  <div class="col-sm-8">
+   <form method="post" action="hasilcarimhs.php" target="frmhasilcari" class="input-group">
+    <input type="text" name="kCari" placeholder="Ketik nomor pokok mahasiswa yang dicari" class="form-control">
+	<input type="submit" value="Go" class="btn btn-info">
+   </form>
+  </div>  
+ </div> 
+ <form action="" method="post">
+  <div class="row">
+   <div class="col-sm-5">
     <div class="mb-3 mt-3">
       <label for="npm">NPM :</label>
       <input type="text" class="form-control" id="npm" placeholder="Ketik kode npm-nya" name="npm">
@@ -30,6 +42,7 @@ $kon=mysqli_connect("localhost","root","","aplikasisampel1");
       <option value="L">Laki-laki</option>
     </select>
     </div>
+	<div class="input-group">
 	<div class="mb-3">
       <label for="tempatlahir">Tempat Lahir:</label>
       <input type="text" class="form-control" id="tempatlahir" placeholder="Enter tempat lahir mahasiswanya" name="tempatlahir">
@@ -38,6 +51,10 @@ $kon=mysqli_connect("localhost","root","","aplikasisampel1");
       <label for="tanggallahir">Tanggal Lahir:</label>
       <input type="date" class="form-control" id="tanggallahir" placeholder="Enter tempat lahir mahasiswanya" name="tanggallahir">
     </div>
+	</div>
+   </div>
+   <div class="col-sm-6">   
+	
 	<div class="mb-3">
       <label for="alamat">Alamat mahasiswa:</label>
       <textarea title="Enter alamat tinggal mahasiswanya" name="alamat" class="form-control">
@@ -59,6 +76,8 @@ $kon=mysqli_connect("localhost","root","","aplikasisampel1");
     </select>
     </div>
     <button type="submit" class="btn btn-primary" name="bSimpan">Simpan</button>
+   </div>
+  </div>
   </form>
   <?php 
   if (isset($_POST['bSimpan'])) {
@@ -74,7 +93,9 @@ $kon=mysqli_connect("localhost","root","","aplikasisampel1");
 	  $q=mysqli_query($kon,$sql);
   }
   ?>
+<div class="row">  
+<iframe name="frmhasilcari" class="col-sm-12"></iframe>  
 </div>
-
+</div>
 </body>
 </html>
