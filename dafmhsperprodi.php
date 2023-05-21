@@ -64,7 +64,7 @@
 ?>
     </tbody>
 </table>
-<hr>
+<hr class="divider py-1 bg-success">
 <?php } //end if !empty$rm
  } while ($r=mysqli_fetch_array($q));
 ?>

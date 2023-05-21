@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 03, 2023 at 06:16 AM
+-- Generation Time: May 22, 2023 at 12:47 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.14
 
@@ -24,6 +24,17 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `KodeLogin` varchar(30) NOT NULL,
+  `Password` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `mahasiswa`
 --
 
@@ -36,6 +47,16 @@ CREATE TABLE `mahasiswa` (
   `alamat` text NOT NULL,
   `kodeprodi` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `mahasiswa`
+--
+
+INSERT INTO `mahasiswa` (`npm`, `namamahasiswa`, `sex`, `tempatlahir`, `tanggallahir`, `alamat`, `kodeprodi`) VALUES
+('2055201016', 'Astri Yunika', 'P', 'Talang Rasau', '2001-11-05', '	  Jl. Raya Lais, Ds. Talang Rasau, Kab. Bengkulu Utara	  	  	  	  	  	  	  	  	  	  ', '55201'),
+('2055201027', 'Melinia Safitri', 'P', 'BOGOR', '2000-11-04', 'Desa.Tanjung Besar kec.Kaur Selatan kab. Kaur', '55201'),
+('2257201003', 'WIDYA ARIYANTI', 'P', 'NAPAL PUTIH', '2003-11-26', 'Desa Napal putih, kec. Napal putih, kab. Bengkulu Utara, bengkulu	  ', '57201'),
+('2257201006', 'CALVIN LEORENZA', 'L', 'TALANG ALAI', '2003-03-30', 'Jl.Raya Kelutum Simpang Pino Km.13 Kel. Kembang Seri Kec Pino Raya', '57201');
 
 -- --------------------------------------------------------
 
@@ -53,12 +74,18 @@ CREATE TABLE `prodi` (
 --
 
 INSERT INTO `prodi` (`kodeprodi`, `namaprodi`) VALUES
-('12345', 'Sistem Informasi'),
-('55201', 'Teknik Informatika');
+('55201', 'Teknik Informatika'),
+('57201', 'Sistem Informasi');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `login`
+--
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`KodeLogin`);
 
 --
 -- Indexes for table `mahasiswa`
