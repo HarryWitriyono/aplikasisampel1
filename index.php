@@ -22,21 +22,21 @@ if (empty($_SESSION['_login'])) header('location:login.php'); ?>
           <a class="nav-link" href="beranda.php" target="frutama" title="Beranda">🏠</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="prodi.php" target="frutama">Prodi</a>
+          <a class="nav-link" href="prodi.php" target="frutama">🎓 Prodi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="mahasiswa.php" target="frutama">Mahasiswa</a>
+          <a class="nav-link" href="mahasiswa.php" target="frutama">👫 Mahasiswa</a>
         </li>  
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Informasi</a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">ℹ️ Informasi</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="daftarprodi.php" target="frutama">Daftar Program Studi</a></li>
+            <li><a class="dropdown-item" href="daftarprodi.php" target="frutama"> 🎓 Daftar Program Studi</a></li>
             <li><a class="dropdown-item" href="dafmhsperprodi.php" target="frutama">🧑🏻‍🎓 Daftar Mahasiswa Per Program Studi</a></li>
             <li><a class="dropdown-item" href="profilmhs.php" target="frutama">🧑🏻‍🎓 Profil Mahasiswa</a></li>
           </ul>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="logout.php">Logout</a>
+          <a class="nav-link" href="logout.php">🚪 Logout</a>
         </li>
       </ul>
     </div>
