@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2023 at 12:47 AM
+-- Generation Time: May 25, 2023 at 06:01 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.14
 
@@ -31,6 +31,13 @@ CREATE TABLE `login` (
   `KodeLogin` varchar(30) NOT NULL,
   `Password` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`KodeLogin`, `Password`) VALUES
+('admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -74,8 +81,7 @@ CREATE TABLE `prodi` (
 --
 
 INSERT INTO `prodi` (`kodeprodi`, `namaprodi`) VALUES
-('55201', 'Teknik Informatika'),
-('57201', 'Sistem Informasi');
+('55201', 'Teknik Informatika');
 
 --
 -- Indexes for dumped tables

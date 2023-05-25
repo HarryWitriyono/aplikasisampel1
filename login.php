@@ -34,7 +34,7 @@
 		  echo '<div class="alert alert-danger alert-dismissible">
   <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
   <strong>Gagal Login!</strong> Anda gagal login silahkan ulangi lagi !.
-</div>';echo $sql;
+</div>';
 	  } else {
 		  if (!isset($_SESSION)) session_start();
 		  $_SESSION['_login']=$r['KodeLogin'];
