@@ -19,7 +19,7 @@ if (empty($_SESSION['_login'])) header('location:login.php'); ?>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="beranda.php" target="frutama">Beranda</a>
+          <a class="nav-link" href="beranda.php" target="frutama" title="Beranda">🏠</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="prodi.php" target="frutama">Prodi</a>
