@@ -8,7 +8,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
+<?php if (!isset($_SESSION)) session_start(); 
+if (empty($_SESSION['_login'])) header('location:login.php'); ?>
 <nav class="navbar navbar-expand-sm bg-success navbar-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">🧑🏻‍🎓</a>
@@ -34,6 +35,9 @@
             <li><a class="dropdown-item" href="profilmhs.php" target="frutama">🧑🏻‍🎓 Profil Mahasiswa</a></li>
           </ul>
         </li>
+		<li class="nav-item">
+          <a class="nav-link" href="logout.php">Logout</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -42,6 +46,7 @@
 <div class="container-fluid mt-3">
   <iframe name="frutama" src="beranda.php" width="100%" height="500px"></iframe>  
 </div>
+
 
 </body>
 </html>
