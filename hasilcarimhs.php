@@ -25,7 +25,7 @@
     </thead>
     <tbody>
 <?php
-$kon=mysqli_connect("localhost","root","","aplikasisampel1");
+include_once('koneksi.db.php');
 if (isset($_POST['kCari'])) {
 	$kCari=$_POST['kCari'];
 	$sql="select * from mahasiswa where npm like '%".$kCari."%'";
