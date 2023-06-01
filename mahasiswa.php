@@ -1,5 +1,5 @@
 <?php 
-$kon=mysqli_connect("localhost","root","","aplikasisampel1");
+include_once('koneksi.db.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
