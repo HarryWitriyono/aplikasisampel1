@@ -20,7 +20,7 @@
     </thead>
     <tbody>
 <?php
- $kon=mysqli_connect("localhost","root","","aplikasisampel1");
+ include_once('koneksi.db.php');
  $sql="select * from prodi";
  $q=mysqli_query($kon,$sql);
  $r=mysqli_fetch_array($q);
