@@ -11,7 +11,7 @@
 
 <div class="container mt-3">
  <div class="row">
-  <h2 class="navbar navbar-expand-sm bg-success justify-content-center">Login Form</h2>
+  <h2 class="navbar navbar-expand-sm bg-success justify-content-center rounded-5">Login Form</h2>
   <div class="col-sm-6">
   <form method="post">
   <div class="form-group">
@@ -49,13 +49,13 @@ if (isset($_POST['submit'])) {
 ?>
   </div>
   <div class="col-sm-6">
-  <div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas offcanvas-start rounded-5" id="demo">
   <div class="offcanvas-header">
     <h1 class="offcanvas-title">Help</h1>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
   </div>
   <div class="offcanvas-body">
-    <p>Kontak ☎️ 081539002534</p>
+    <p>Kontak ☎️ 08153902534</p>
     <p>Email ✉️ harrywitriyono@gmail.com</p>
     <p>Silahkan dikontak dalam jam kerja.</p>
     <button class="btn btn-secondary" data-bs-dismiss="offcanvas" type="button">📥</button>
